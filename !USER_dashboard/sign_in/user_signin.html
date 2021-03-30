@@ -11,12 +11,87 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <!-- favicone-->
-    <link rel="shortcut icon"  href="./../../assets/logo/favicone_user.png"/>
+    <link rel="shortcut icon" href="./../../assets/logo/favicone_user.png" />
+
+    <!--custom css-->
+    <link rel="stylesheet" href="./../user_style/userstyle.css">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body class="text-center">
 
-<p>Hello sign in</p>
+    <main class="form-signin">
+        <form>
+            <a href="./../../home.html">
+                <img class="mb-4" src="./../../assets/logo/logo_user.png" alt="">
+            </a>
+
+
+            <h1 class="h3 mb-3 fw-normal">Sign in</h1>
+
+            <div class="form-floating mt-5">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Votre nom">
+                <label for="floatingInput">votre nom</label>
+            </div>
+
+            <div class="form-floating mt-2">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Votre prenom">
+                <label for="floatingInput">votre prenom</label>
+            </div>
+
+            <div class="form-floating mt-2">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+
+            <div class="form-floating mt-2">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+           
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                <label class="form-check-label" for="inlineRadio1">Salarié(e)</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">Non Salarié(e)</label>
+            </div>
+
+
+            <div class="mt-4  ">
+                <a href="./../sign_in/user_signin.html">
+                    <button type="button" class="btn btn-primary mx-2 btn-lg ">Sign in</button>
+                </a>
+                <a href="./../../home.html">
+                    <button type="button" class="btn btn-outline-danger btn-lg ">Annuler</button>
+                </a>
+            </div>
+
+
+            <p class="mt-5 mb-3 text-muted">&copy; 2020–2021</p>
+        </form>
+    </main>
+
+
+
 
 
 
