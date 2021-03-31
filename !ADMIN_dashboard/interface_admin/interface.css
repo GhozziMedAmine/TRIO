@@ -18,6 +18,7 @@ main{
 	.actions .btn-info{
 		float:left;
 	}
+	
 	.actions .btn-danger{
 		float:right;
 	}
